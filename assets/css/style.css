@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&display=swap');
+:root{--navy:#111a35;--purple:#6557d9;--muted:#7b8498;--line:#e9ecf4}
+*{box-sizing:border-box}
+body{background:#f5f6fb;min-height:100vh;color:#202842;font-family:'Cairo',Tahoma,Arial,sans-serif}
+.app-navbar{background:var(--navy);box-shadow:0 4px 18px rgba(17,26,53,.12)}
+.navbar-brand{font-size:.98rem;letter-spacing:.2px}
+.brand-mark{display:inline-grid;place-items:center;width:28px;height:28px;border-radius:9px;background:linear-gradient(135deg,#8b7cf6,#5b54d6);margin-left:6px;color:#fff}
+.brand-divider{color:#7782a2;margin:0 5px}
+.app-main{max-width:1600px;margin:0 auto;min-height:calc(100vh - 140px)}
+.eyebrow{color:#7770d8;font-size:.72rem;font-weight:800;letter-spacing:1.2px}
+.metric-card{position:relative;overflow:hidden;min-height:155px;padding:22px;border-radius:18px;background:#fff;border:1px solid var(--line);box-shadow:0 8px 25px rgba(30,42,80,.04)}
+.metric-card:after{content:"";position:absolute;width:120px;height:120px;border-radius:50%;left:-35px;bottom:-55px;opacity:.12;background:currentColor}
+.metric-purple{color:#6557d9}.metric-blue{color:#2878c7}.metric-green{color:#169b78}
+.metric-icon{font-size:1.5rem;margin-bottom:8px}.metric-label{color:#7b8498;font-size:.9rem}
+.metric-value{color:#1e2945;font-size:2.2rem;font-weight:800;line-height:1.25}.metric-foot{color:#9aa1b1;font-size:.76rem;margin-top:4px}
+.panel-card{background:#fff;border:1px solid var(--line);border-radius:18px;box-shadow:0 8px 25px rgba(30,42,80,.04);overflow:hidden}
+.panel-heading{padding:20px 22px;display:flex;align-items:center;justify-content:space-between;gap:12px;border-bottom:1px solid var(--line)}
+.chart-wrap{height:300px;padding:18px 24px 24px}
+.quick-links{padding:8px 20px 18px}
+.quick-links a{display:flex;align-items:center;gap:13px;padding:15px 2px;color:#27314b;text-decoration:none;border-bottom:1px solid #f0f1f6}
+.quick-links a:last-child{border-bottom:0}
+.quick-links a>span{display:grid;place-items:center;width:42px;height:42px;border-radius:12px;background:#f1f0ff;font-size:1.2rem}
+.quick-links a div{display:grid}.quick-links a small{color:var(--muted)}.quick-links a b{margin-right:auto;color:#8c92a5}
+.table{--bs-table-bg:transparent}.table thead th{color:#7b8498;background:#fafbfe;font-size:.82rem;font-weight:700;white-space:nowrap;border-bottom:1px solid var(--line)}
+.table td{padding-top:13px;padding-bottom:13px}
+.speciality-pill{display:inline-block;border-radius:30px;background:#f1f0ff;color:#6557d9;padding:4px 10px;font-size:.78rem}
+.empty-state{display:grid;place-items:center;height:100%;color:var(--muted)}
+.profile-card{background:#fff;border-radius:20px;overflow:hidden;border:1px solid var(--line);box-shadow:0 10px 35px rgba(30,42,80,.06)}
+.profile-top{display:flex;align-items:center;gap:18px;padding:30px;color:#fff;background:linear-gradient(120deg,#151f42,#6258d8)}
+.avatar-circle{display:grid;place-items:center;width:68px;height:68px;border-radius:20px;background:rgba(255,255,255,.18);font-size:1.8rem;font-weight:800}
+.profile-details{padding:12px 20px 22px}.detail-cell{padding:18px 12px;border-bottom:1px solid #eff0f5;display:grid;gap:5px}
+.detail-cell small{color:var(--muted)}.detail-cell strong{color:#28324d;overflow-wrap:anywhere}
+.card{border:1px solid var(--line);border-radius:16px}.btn-primary{background:var(--purple);border-color:var(--purple)}.btn-primary:hover{background:#5144c5;border-color:#5144c5}
+.app-footer{color:#8a91a4;background:#fff;border-top:1px solid var(--line)}
+@media(max-width:576px){.brand-divider{display:none}.navbar-brand{font-size:.82rem}.chart-wrap{height:260px}.profile-top{padding:22px}}
